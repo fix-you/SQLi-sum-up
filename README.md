@@ -35,9 +35,12 @@
 	
 	4. In the 3rd part, it's quite dull and of *LOW efficiency* to fetch data little by little, so i decide to make it AUTOMATIC:
 - Python:
-
-> before using, the injection param should be put at the TAIL of url, which is 
-> from *?id=1%20UNION%20SELECT%201,user()&Submit=Submit#*  to  *?Submit=Submit&id=1%20UNION%20SELECT%201,user()* 
+>EXAMPLE SITE-CTF:http://47.96.138.65:45787/?id=1 
+>before using, the injection param should be put at the TAIL of url, which is 
+>from 
+> * ?id=1%20UNION%20SELECT%201,user()&Submit=Submit# 
+> to  
+> * ?IDSubmit=Submit&id=1%20UNION%20SELECT%201,user() 
 
 ```
 # coding:utf-8
