@@ -34,7 +34,7 @@ before using, the injection param should be put at the TAIL of url, which is
 from *?id=1%20UNION%20SELECT%201,user()&Submit=Submit#*  to  *?Submit=Submit&id=1%20UNION%20SELECT%201,user()* 
 
 ```
-[](点击查看py代码0.0)
+[https://github.com/fix-you/SQLi-sum-up/blob/master/Sqli_auto_fetch_via_union.py](点击查看py代码0.0)
 ```
 效果如下：
 ![https://henry-wp-backup.oss-cn-shenzhen.aliyuncs.com/Wordpress/WEB_PENETRATION/sqli_fuzz/auto_fuzzing.png?Expires=1558849553&OSSAccessKeyId=TMP.AgEnMPRvFnZWH2pt2zL2a-LiQDzkLXjGUB67M9WdK00USBLurBmvAJr4sWVZADAtAhUA2TeC9aA7vq7Oczv1vzoAkWWIxn4CFFK7JRKD4Po90RmVs7St2MA4mMga&Signature=9tJs2gYLx%2BsVnV06TaSQk6bgSfI%3D]()
@@ -46,14 +46,6 @@ from *?id=1%20UNION%20SELECT%201,user()&Submit=Submit#*  to  *?Submit=Submit&id=
 		- match(r[pattern],String) //match string
 	
 
-
-	
-	
-	
-	
-	
-	
-	
 	
 ## Reasons of sqli
 1. user-provided params which directly connect to db *WITHOUT* filter
@@ -64,5 +56,6 @@ from *?id=1%20UNION%20SELECT%201,user()&Submit=Submit#*  to  *?Submit=Submit&id=
 2. $result should be seen outside
 	> echo($query)
 	> echo...
+
 
 	
