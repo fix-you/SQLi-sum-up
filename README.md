@@ -137,7 +137,7 @@ if __name__ == "__main__":
 
 ```
 效果如下：
-![](https://henry-wp-backup.oss-cn-shenzhen.aliyuncs.com/Wordpress/WEB_PENETRATION/sqli_fuzz/auto_fuzzing.png?Expires=1558849553&OSSAccessKeyId=TMP.AgEnMPRvFnZWH2pt2zL2a-LiQDzkLXjGUB67M9WdK00USBLurBmvAJr4sWVZADAtAhUA2TeC9aA7vq7Oczv1vzoAkWWIxn4CFFK7JRKD4Po90RmVs7St2MA4mMga&Signature=9tJs2gYLx%2BsVnV06TaSQk6bgSfI%3D)
+![](auto_fuzzing.png)
 
 
 - 编程心得
@@ -156,6 +156,3 @@ if __name__ == "__main__":
 2. $result should be seen outside
 	> echo($query)
 	> echo...
-
-
-	
